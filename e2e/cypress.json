@@ -1,5 +1,5 @@
 {
-    "baseUrl":"https://abookstore.azurewebsites.net/",
+    "baseUrl":"https://bookstoreglendyzulay.azurewebsites.net/",
     "reporter": "junit",
     "reporterOptions": {
         "mochaFile": "results/TEST-[hash].xml"
