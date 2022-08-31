@@ -1,0 +1,24 @@
+{
+  "name": "automation-bookstore",
+  "version": "1.0.0",
+  "description": "Sample application for test automation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glendy-zulay/automation-bookstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glendy-zulay/automation-bookstore/issues"
+  },
+  "homepage": "https://github.com/glendy-zulay/automation-bookstore#readme",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.27.1",
+    "cypress": "^10.7.0"
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-08-31T15:57:08" tests="0" file="cypress/integration/search_visual.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Search for books - eyes" timestamp="2022-08-31T15:57:08" tests="2" time="0.0000" failures="1">
+    <testcase name="Search for books - eyes &quot;before each&quot; hook for &quot;eyes should return one book with title Agile Testing&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;eyes should return one book with title Agile Testing&quot;">
+      <failure message="IllegalArgument: appName is null or undefined
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Search for books - eyes`" type="CypressError"><![CDATA[[object Object]
+Error: IllegalArgument: appName is null or undefined
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Search for books - eyes`
+    at Object.notNull (C:\Users\gduran\automationProjects\automation-bookstore\e2e\node_modules\@applitools\eyes-sdk-core\lib\utils\ArgumentGuard.js:37:11)
+    at Object.open (C:\Users\gduran\automationProjects\automation-bookstore\e2e\node_modules\@applitools\eyes-sdk-core\lib\sdk\EyesVisualGrid.js:82:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.openEyes (C:\Users\gduran\automationProjects\automation-bookstore\e2e\node_modules\@applitools\eyes-sdk-core\lib\new\open-eyes.js:43:5)
+    at async C:\Users\gduran\automationProjects\automation-bookstore\e2e\node_modules\@applitools\eyes-universal\dist\universal-server.js:128:26
+    at async C:\Users\gduran\automationProjects\automation-bookstore\e2e\node_modules\@applitools\eyes-universal\dist\socket.js:144:32
+From Your Spec Code:
+    at Context.eval (https://abookstore.azurewebsites.net/__cypress/tests?p=cypress\support\index.js:9965:13)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
