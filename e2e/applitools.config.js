@@ -1,4 +1,4 @@
 module.exports = {
-    apiKey: process.env.APPLITOOLS_API_KEY,
+    apiKey: 'z2G6J51dZjGf1093OUN8CIvsgMRr09v5Sz0NDyUSEt2sc110',
     appName:'Automation Bookstore'
 }
