@@ -1,6 +1,6 @@
 describe('Search for books', () => {
     beforeEach(() => {
-        cy.visit('https://bookstoreglendyzulay.azurewebsites.net/')
+        cy.visit('/')
     })
 
     it('should return one book with title Agile Testing', () => {
