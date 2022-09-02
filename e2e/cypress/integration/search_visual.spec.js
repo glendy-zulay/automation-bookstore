@@ -4,7 +4,9 @@ describe('Search for books - eyes', () => {
     })  
   
     it('eyes should return one book with title Agile Testing', () => {
-      cy.eyesOpen()
+      cy.eyesOpen({
+        appName: 'Automation Bookstore'       
+      })
       cy.get('#searchBar').type('Agile Testing', {delay:250})
       cy.eyesCheckWindow('Agile Testing')
       cy.eyesClose()
