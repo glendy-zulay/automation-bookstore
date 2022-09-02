@@ -1,20 +1,23 @@
 describe('Search for books - eyes', () => {
     beforeEach(() => {
-      cy.visit('https://bookstoreglendyzulay.azurewebsites.net/')
-      cy.eyesOpen()
-    })
+      cy.visit('https://bookstoreglendyzulay.azurewebsites.net/')      
+    })  
   
-    afterEach(() => {
+    it('eyes should return one book with title Agile Testing', () => {
+      cy.eyesOpen({
+        appName: 'Automation Bookstore Demo Glendy Duran'        
+      })
+      cy.get('#searchBar').type('Agile Testing', {delay:250})
+      cy.eyesCheckWindow('Agile Testing')
       cy.eyesClose()
     })
   
-    it('eyes should return one book with title Agile Testing', () => {
-      cy.get('#searchBar').type('Agile Testing', {delay:250})
-      cy.eyesCheckWindow()
-    })
-  
     it('eyes should return multiple books with title Test', () => {
+      cy.eyesOpen({
+        appName: 'Automation Bookstore Demo Glendy Duran'        
+      })
       cy.get('#searchBar').type('Test', {delay:250})
-      cy.eyesCheckWindow()
+      cy.eyesCheckWindow('Test')
+      cy.eyesClose()
     })
 })
